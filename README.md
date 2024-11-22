@@ -51,22 +51,22 @@ WX5000
 
 ## syler.conf
 ### syler.conf是syler程序的主要配置文件，放置在和syler同级的目录下
-[radius]
-        port = 1812
-        acc_port = 1813
-        secret = "huawei"
-        enabled = true   #打开自身集成的radius，用户输入任意账户都可以认证成功
-[http]
-        port = 8081
-[huawei]
-        port = 50100
-        version = 2
-        secret = "huawei"
-        nas_port = 2000
-        domain = "1.cn"
-        timeout = 15
-[basic]
-        callback_logout = "http://10.10.100.68"   #当交换机向服务器发送用户下线等主动消息时，服务器转发的目的url
-        logfile = "./debug.log"             #日志文件
-        remote_ip_as_user_ip = true         #是否使用请求的ip作为用户ip
-        nas_ip = "10.10.100.253"
+	[radius]
+	        port = 1812
+	        acc_port = 1813
+	        secret = "huawei"
+	        enabled = true   #打开自身集成的radius，用户输入任意账户都可以认证成功
+	[http]
+	        port = 8081
+	[huawei]
+	        port = 50100
+	        version = 2
+	        secret = "huawei"
+	        nas_port = 2000
+	        domain = "1.cn"
+	        timeout = 15
+	[basic]
+	        callback_logout = "http://10.10.100.68"   #当交换机向服务器发送用户下线等主动消息时，服务器转发的目的url
+	        logfile = "./debug.log"             #日志文件
+	        remote_ip_as_user_ip = true         #是否使用请求的ip作为用户ip
+	        nas_ip = "10.10.100.253"
